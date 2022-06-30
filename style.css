@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0,0.9);
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+h1{
+    text-align: center;
+    color: #fe0101;
+}
+
+.id{
+    text-align: center;
+    color: #fff;
+}
+
+.container{
+    height: 65vh;
+    min-width: 20vw;
+    width: 22vw;
+    background-color: rgb(33, 33, 33);
+    border: 1px solid #000;
+    border-radius: .7rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+.pokemon{
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    
+}
+
+.pokemon h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    
+    
+    
+    
+}
+
+.card h4{
+    font-size: 1.2rem;
+    color: #fe0101;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.info{
+    font-size: 1.25rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+    
+    
+}
+
+.abilities{
+    margin-left: -30px;
+}
+
+
+
+.name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.type{
+    background-color: rgb(68, 133, 28);
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+}
+
+
+
+
+.info li{
+    font-size: 1rem;
+    list-style: none;
+    text-transform: capitalize;
+   
+}
+
+.controls{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3)
+    and (orientation: portrait)  {
+
+
+        .container{
+            height: 60vh;
+            min-width: 10vw;
+            width: 90vw;
+            background-color: rgb(33, 33, 33);
+            border: 1px solid #000;
+            border-radius: .7rem;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+            
+        }
+
+    }
+
+
+     /* 1792x828px at 326ppi */
+@media only screen 
+and (device-width: 414px) 
+and (device-height: 896px) 
+and (-webkit-device-pixel-ratio: 2) { 
+
+    .container{
+        height: 60vh;
+        min-width: 80vw;
+        width: 90vw;
+        background-color: rgb(33, 33, 33);
+        border: 1px solid #000;
+        border-radius: .7rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 767px)
+{
+
+    .container{
+        height: 65vh;
+        min-width: 80vw;
+        width: 90vw;
+        background-color: rgb(33, 33, 33);
+        border: 1px solid #000;
+        border-radius: .7rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+
+}
