@@ -3,9 +3,15 @@ body{
     padding: 0px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0,0.9);
-    
+    height: 90vh;
     font-family: 'Open Sans', sans-serif;
+    display: grid;
+    place-items: center;
     
+}
+ul,li{
+    margin: 0;
+    padding: 0;
 }
 
 h1{
@@ -21,29 +27,31 @@ h1{
 }
 
 .container{
-    height: 70vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
     justify-content: center;
     align-items: center;
-    
-
-}
-.pokemon{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    max-width: 40em;
+    padding: 1.5rem;
+    margin: 1rem;
     border: 1px solid #000;
     box-shadow: 5px 5px 8px #000;
     border-radius: .4rem;
-    padding: 5px 15px;
-    
-    
     
 }
 
+.pokemon{
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr .5fr 2.5fr 1fr;
+    text-align: center;
+}
+
 .img{
-    width: 300px;
-    height: 190px;
+    min-width: 12rem;
+    min-height: 12rem;
+    text-align: center;
 }
 
 .name{
@@ -51,63 +59,7 @@ h1{
     font-weight: bold;
     margin: 0;
     font-family:'Orbitron', sans-serif;
-    
-}
-
-.card{
-    display: flex;
-    height: 20vh;
-    justify-content: space-between;
-    align-items: stretch;
-    font-size: 1.25rem;
-    color: #fff;
-    
-    
-}
-
-.info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-
-.abilities{
-    margin-left: -30px;
-}
-
-.abilities .moves{
-    font-size: 1rem;
-    font-family: 'Roboto Mono', monospace;
-    text-transform: capitalize;
-}
-
-.abilities > li, .moves > li{
-    list-style: none;
-}
-
-.info h4{
-    font-size: 1.2rem;
-    color: #fe0101;
-    text-decoration: underline;
-    margin: 0;
-    text-align: center;
-    
-}
-
-
-
-
-
-.name{
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-    color: aliceblue;
-    text-align: center;
-    text-transform: uppercase;
+    color:rgba(255, 255, 255,0.9);
 }
 
 .type{
@@ -119,14 +71,48 @@ h1{
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 10px;
+    min-width: 100%;
 }
 
+.card{
+    display: grid;
+    min-height: 20vh;
+    min-width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    
+    
+}
 
+.abilities .moves{
+    font-size: .5rem;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
 
+.abilities > li, .moves > li{
+    list-style: none;
+    text-align: center;
+    padding: .5rem;
+}
 
-
+.info h4{
+    font-size: 1.2rem;
+    color: #fe0101;
+    text-decoration: underline;
+    margin: 0;
+    text-align: center;
+    
+}
 
 .controls{
+    grid-column: 1 / 3;
     font-size: 2rem;
     font-weight: bold;
     color: #fff;
@@ -134,4 +120,12 @@ h1{
     text-align: center;
     
 }
+
+@media (min-width:40em){
+    .container{
+        min-width: 20vw;
+    }
+
+}
+
 
